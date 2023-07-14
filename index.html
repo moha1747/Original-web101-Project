@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finding Our Homes</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body id="body" class="dark-mode">
+    <div id="modal" class="modal-hide">
+  <h2>Thank you for signing the petition!</h2>
+      <img class="successImg"  src="images/sucss1231.jpeg">
+  <button id="closeModal" class="close-modal">Close</button>
+</div>
+  <script src="script.js"></script>
+  <nav>
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <button type="submit" id="darkModeBtn"> 🌓</button>
+
+    </ul>
+  </nav>
+  <header id="home" class="main-container">
+    <h1 class="header-text">Finding Our Homes</h1>
+    <h3 class="header-text">The Bridge Between You & Your New Home</h3>
+    <div class="overlay">
+      <img class="hero" id="left-pic" src="images/nick-page-2EhXlM_1Po0-unsplash.jpg" alt="home picture">
+      <img class="hero" id="right-pic" src="images/katerina-kerdi--YiJvbfNDqk-unsplash.jpg" alt="home picture">
+    </div>
+  </header>
+  <main>
+    <section id="services" class="content-container">
+      <h1 class="header-text">Our Services</h1>
+      <button id="button1">Find a home</button>
+      <button id="button2" onclick="window.location.href='Contact.html';">Connect with us</button>
+      <p class="desc">We help individuals across the country find a home. Whether you are looking for a temporary home
+        or looking to relocate, we are one click away.</p>
+      <p class="desc">Our job is to help people in need and give them extra resources and help when it comes to finding
+        a new home. Everyone deserves a place to call home and our mission is to make that happen. </p>
+      <div class="images-container">
+        <img class="header-images" src="images/5415790.jpg" alt="Illustration of a home">
+        <img class="header-images" src="images/5847906.jpg" alt="Illustration of a home">
+        <img class="header-images" src="images/7061505.jpg" alt="Illustration of a home">
+      </div>
+    </section>
+    <!--     Petition form -->
+    <section class="petition-container">
+      <div class="petition">
+        <h2>Support Our Cause</h2>
+        <p>
+          We are calling for an increase in funding for affordable housing projects across the country. Join us by
+          signing the petition below and help make a difference in the lives of those in need of a home.
+        </p>
+      </div>
+      <div class="signatures">
+        <h3>Signatures</h3>
+        <p>Jane Doe, New York</p>
+        <p>John Smith, Los Angeles</p>
+        <p>Alice Johnson, Chicago</p>
+
+    
+        
+      </div>
+
+      <div class="petitionForm">
+        <form id="form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Name" required />
+          <label for="email">E-mail Address</label>
+          <input type="email" id="email" placeholder="E-mail address" required />
+          <label for="hometown">Hometown:</label>
+          <input type="text" id="hometown" placeholder="Hometown" required />
+          <button type="submit" id="sign-now-button">Sign Now</button>
+        </form>
+      </div>
+      </section>
+
+    
+
+  </main>
+
+
+</body>
+
+
+</html>
